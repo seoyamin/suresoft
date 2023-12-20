@@ -1,0 +1,15 @@
+server:
+  port: 8081
+
+jira:
+  api-token: bXNraW1Ac3VyZXNvZnR0ZWNoLmNvbTpBVEFUVDN4RmZHRjByUGVQaUZWbXFoemljQUIzcTB4UXRfTzRwV3k4cGlyODZHSmh2WDZ6c3BHb1Fsb08wQU90UWpZcnM4aU5RVmNlV2xjTlFMSjJUMEt3QW1OVDM0V0hHY2NZYWJBWGE0clRHaXJxOXZxWWg1SG1sVElpUVdjbW1MOWRJRmNwLU1aRFkzX2V6OWZHdV9HTElPOTJBMzZYYXRsMmh3TUFfZ1pWTGowN2RONk1XSFE9MThFMzFEMDM=
+
+openai:
+  api-key: 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
+  request:
+    path: https://api.openai.com/v1/chat/completions
+
+spring:
+  mvc:
+    converters:
+      preferred-json-mapper: gson
