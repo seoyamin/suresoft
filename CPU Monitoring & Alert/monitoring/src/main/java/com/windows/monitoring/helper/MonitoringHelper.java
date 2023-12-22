@@ -8,6 +8,9 @@ import com.sun.management.OperatingSystemMXBean;
 import org.springframework.stereotype.Component;
 
 import java.lang.management.ManagementFactory;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
 
 @Component
 public class MonitoringHelper {
@@ -18,8 +21,21 @@ public class MonitoringHelper {
     }
 
     public double getProcessCpuUsage() {
+        Date ddd = new Date();
+        Calendar ccc = Calendar.getInstance(Locale.CANADA);
+
         OperatingSystemMXBean osMXBean = (OperatingSystemMXBean) ManagementFactory.getOperatingSystemMXBean();
         return osMXBean.getProcessCpuLoad();
+    }
+
+    public long getTotalMemorySize() {
+        OperatingSystemMXBean osMXBean = (OperatingSystemMXBean) ManagementFactory.getOperatingSystemMXBean();
+        return osMXBean.getTotalMemorySize();
+    }
+
+    public long getFreeMemorySize() {
+        OperatingSystemMXBean osMXBean = (OperatingSystemMXBean) ManagementFactory.getOperatingSystemMXBean();
+        return osMXBean.getFreeMemorySize();
     }
 
     /*

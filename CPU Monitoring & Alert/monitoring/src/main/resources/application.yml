@@ -8,4 +8,4 @@ spring:
     view-names: /html/*
 
 slack:
-  webhook-url: https://hooks.slack.com/services/SLACK_WEBHOOK_URL
+  webhook-url: https://hooks.slack.com/services/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

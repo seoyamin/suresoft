@@ -16,11 +16,11 @@ public class MonitoringScheduler {
 
     @Scheduled(fixedDelay = 5000)
     private void monitoring() {
-        double cpuUsage = monitoringHelper.getCpuUsage();
-        if (cpuUsage * 100 > 10) slackService.sendMessage(ResourceType.CPU_OS);
-
-        double processCpuUsage = monitoringHelper.getProcessCpuUsage();
-        if(processCpuUsage * 100 > 10) slackService.sendMessage(ResourceType.CPU_PROCESS);
+//        double cpuUsage = monitoringHelper.getCpuUsage();
+//        if (cpuUsage * 100 > 10) slackService.sendMessage(ResourceType.CPU_OS);
+//
+//        double processCpuUsage = monitoringHelper.getProcessCpuUsage();
+//        if(processCpuUsage * 100 > 10) slackService.sendMessage(ResourceType.CPU_PROCESS);
     }
 
 }
